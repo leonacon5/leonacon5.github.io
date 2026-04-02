@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEONA-CON d.o.o.</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#0f172a;
+color:#e5e7eb;
+}
+
+/* NAV */
+nav{
+position:fixed;
+width:100%;
+top:0;
+backdrop-filter:blur(10px);
+background:rgba(15,23,42,0.7);
+padding:15px;
+text-align:center;
+z-index:1000;
+}
+
+nav a{
+color:#e5e7eb;
+margin:0 15px;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav a:hover{color:#38bdf8;}
+
+/* HEADER */
+header{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1497366216548-37526070297c') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+}
+
+header::after{
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.65);
+}
+
+.header-content{
+position:relative;
+z-index:2;
+max-width:800px;
+animation:fadeIn 1.5s ease;
+}
+
+header h1{font-size:48px;}
+header p{margin-top:20px;font-size:18px;line-height:1.6;}
+
+/* SECTIONS */
+section{
+padding:100px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+/* GLASS */
+.glass{
+background:rgba(255,255,255,0.05);
+padding:40px;
+border-radius:15px;
+backdrop-filter:blur(12px);
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+margin-bottom:30px;
+transition:0.4s;
+}
+
+.glass:hover{transform:translateY(-6px);}
+
+h2{margin-bottom:20px;color:#38bdf8;}
+p{line-height:1.8;}
+
+/* SERVICES */
+.services{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.service{
+flex:1 1 30%;
+}
+
+/* IMAGE */
+.image{
+height:320px;
+border-radius:15px;
+margin-top:20px;
+background-size:cover;
+background-position:center;
+}
+
+/* FORM */
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:8px;
+}
+
+button{
+background:linear-gradient(45deg,#38bdf8,#6366f1);
+border:none;
+padding:12px 25px;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{opacity:0.9;}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+}
+
+/* ANIM */
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#home">Početna</a>
+<a href="#about">O nama</a>
+<a href="#services">Usluge</a>
+<a href="#process">Proces</a>
+<a href="#industries">Industrije</a>
+<a href="#strategy">Strategija</a>
+<a href="#team">Tim</a>
+<a href="#why">Zašto mi</a>
+<a href="#contact">Kontakt</a>
+</nav>
+
+<header id="home">
+<div class="header-content">
+<h1>LEONA-CON d.o.o.</h1>
+<p>Specijalizirani smo za management, znanstveno i tehničko savjetovanje te napredna IT rješenja. Pomažemo organizacijama da unaprijede učinkovitost, donose bolje odluke i ostvare održiv rast kroz kombinaciju strategije, analitike i tehnologije.</p>
+</div>
+</header>
+
+<section id="about">
+<div class="glass">
+<h2>O nama</h2>
+<p>LEONA-CON d.o.o. je konzultantska tvrtka usmjerena na pružanje visokokvalitetnih usluga u području poslovnog upravljanja, tehnoloških inovacija i digitalne transformacije. Naš tim okuplja stručnjake iz različitih područja koji zajedno rade na razvoju rješenja prilagođenih specifičnim potrebama klijenata.</p>
+<p>Razumijemo izazove modernog tržišta i pomažemo organizacijama da se prilagode kroz optimizaciju procesa, implementaciju novih tehnologija i strateško planiranje.</p>
+</div>
+</section>
+
+<section id="services">
+<h2>Naše usluge</h2>
+<div class="services">
+<div class="glass service">
+<h3>Management consulting</h3>
+<p>Pružamo detaljnu analizu poslovanja, identifikaciju ključnih problema i razvoj strategija za povećanje učinkovitosti, profitabilnosti i dugoročne održivosti.</p>
+</div>
+<div class="glass service">
+<h3>Tehničko savjetovanje</h3>
+<p>Podržavamo organizacije u implementaciji tehničkih rješenja, optimizaciji infrastrukture i unapređenju operativnih procesa kroz inovacije.</p>
+</div>
+<div class="glass service">
+<h3>IT i software</h3>
+<p>Razvijamo i savjetujemo u području digitalnih sustava, softverskih rješenja i IT arhitekture, s fokusom na skalabilnost i sigurnost.</p>
+</div>
+</div>
+
+<div class="image" style="background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71');"></div>
+</section>
+
+<section id="process">
+<div class="glass">
+<h2>Naš proces rada</h2>
+<p>Naš pristup temelji se na jasno definiranim fazama: analiza trenutnog stanja, razvoj strategije, implementacija rješenja i kontinuirano praćenje rezultata. Svaki projekt prilagođavamo specifičnim ciljevima klijenta.</p>
+<p>Kroz transparentnu komunikaciju i strukturirani pristup osiguravamo kvalitetu i dugoročnu vrijednost.</p>
+</div>
+</section>
+
+<section id="industries">
+<div class="glass">
+<h2>Industrije u kojima djelujemo</h2>
+<p>Radimo s klijentima iz različitih sektora uključujući IT industriju, financijske institucije, proizvodne tvrtke i startup zajednicu. Naša fleksibilnost omogućuje nam prilagodbu različitim poslovnim modelima.</p>
+<div class="image" style="background-image:url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d');"></div>
+</div>
+</section>
+
+<section id="strategy">
+<div class="glass">
+<h2>Strateški pristup</h2>
+<p>Naš rad temelji se na podacima i analizi. Razvijamo strategije koje omogućuju klijentima da donose informirane odluke, smanjuju rizike i ostvaruju konkurentsku prednost.</p>
+<p>Kombiniramo poslovno znanje s tehnološkim rješenjima kako bismo osigurali konkretne rezultate.</p>
+</div>
+</section>
+
+<section id="team">
+<div class="glass">
+<h2>Naš tim</h2>
+<p>Naš tim čine stručnjaci s iskustvom u managementu, inženjerstvu i informacijskim tehnologijama. Fokusirani smo na kontinuirano usavršavanje i praćenje najnovijih trendova.</p>
+<div class="image" style="background-image:url('https://images.unsplash.com/photo-1522071820081-009f0129c71c');"></div>
+</div>
+</section>
+
+<section id="why">
+<div class="glass">
+<h2>Zašto odabrati nas</h2>
+<p>LEONA-CON d.o.o. nudi kombinaciju stručnosti, inovativnosti i individualnog pristupa svakom klijentu. Naš cilj nije samo savjetovati, već aktivno sudjelovati u stvaranju uspješnih rješenja.</p>
+<p>Gradimo dugoročne odnose temeljene na povjerenju i rezultatima.</p>
+</div>
+</section>
+
+<section id="contact">
+<div class="glass">
+<h2>Kontaktirajte nas</h2>
+<p>Email: info@leona-con.com</p>
+<p>Adresa: Put Draga II 1 23232, Zaton, Zadarska županija, Croatia</p>
+
+<form id="form">
+<input type="text" id="name" placeholder="Ime i prezime">
+<input type="email" id="email" placeholder="Email">
+<input type="text" id="phone" placeholder="Telefon">
+<textarea id="msg" placeholder="Poruka"></textarea>
+<button type="submit">Pošalji</button>
+<p id="status"></p>
+</form>
+</div>
+</section>
+
+<footer>
+<p>© 2026 LEONA-CON d.o.o. Sva prava pridržana.</p>
+</footer>
+
+<script>
+document.getElementById("form").addEventListener("submit", function(e){
+e.preventDefault();
+
+let name=document.getElementById("name").value.trim();
+let email=document.getElementById("email").value.trim();
+let msg=document.getElementById("msg").value.trim();
+let status=document.getElementById("status");
+
+if(!name||!email||!msg){
+status.style.color="red";
+status.innerText="Molimo ispunite sva obavezna polja.";
+return;
+}
+
+if(!email.includes("@")){
+status.style.color="red";
+status.innerText="Unesite ispravan email.";
+return;
+}
+
+status.style.color="lightgreen";
+status.innerText="Poruka je uspješno poslana!";
+});
+</script>
+
+</body>
+</html>
